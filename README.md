@@ -34,23 +34,20 @@ blockKitPayload.AddImageWithTitle("https://assets3.thrillist.com/v1/image/168238
 // Add a divider section
 blockKitPayload.AddDivider();
 ```
-Simple text payloads are created similarly
+Simple text payloads are created similarly.
 ````csharp
 // Create a new BlockKit payload
 SimpleMessage simpleMessagePayload= new("This is a simple message payload.");
 ````
-Use the Dispatcher to send your payloads
+Send payloads using the Send() or SendAsync() methods.
 ```csharp
-// Set the Dispatcher Webhook URI
-Dispatcher.WebhookUri = new Uri(<YOURWEBHOOKURI>);
+bool success = blockKitPayload.Send(new Uri(webhookUri));
+bool success = simpleMessagePayload.Send(new Uri(webhookUri));
 
-// Dispatch payload asynchronously
-bool success = await Dispatcher.SendBlockKitPayloadAsync(blockKitPayload);
-bool success = await Dispatcher.SendSimpleMessageAsync(simpleMessagePayload);
+// or
 
-// or synchronously
-bool success = Dispatcher.SendBlockKitPayload(payload);
-bool success = Dispatcher.SendSimpleMessage(simpleMessagePayload);
+bool success = await blockKitPayload.SendAsync(new Uri(webhookUri));
+bool success = await simpleMessagePayload.SendAsync(new Uri(webhookUri));
 ````
 
 ## Contributing
