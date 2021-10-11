@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Slacker.NET.Library/0.0.1": {
+      "Slacker.NET.Library/0.0.2": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
@@ -25,7 +25,7 @@
     }
   },
   "libraries": {
-    "Slacker.NET.Library/0.0.1": {
+    "Slacker.NET.Library/0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

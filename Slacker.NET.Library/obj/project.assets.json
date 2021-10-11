@@ -53,7 +53,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "restore": {
       "projectUniqueName": "C:\\GitHub\\Slacker.NET\\Slacker.NET.Library\\Slacker.NET.Library.csproj",
       "projectName": "Slacker.NET.Library",
