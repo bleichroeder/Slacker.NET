@@ -6,7 +6,7 @@ namespace Slacker.NET.Tests
 {
     public class DispatcherTests
     {
-        private readonly Uri WebhookUri = new ("https://hooks.slack.com/services/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");
+        private readonly Uri WebhookUri = new ("");
 
         [Fact]
         public void DispatchSimpleMessagePayload()
