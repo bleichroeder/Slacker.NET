@@ -8,6 +8,7 @@
     <Description>Simple .NET Core Slack messenger allowing for simple text messaging and BlockKit payloads.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReleaseNotes>Testing basic dispatching and BlockKit payload building.</PackageReleaseNotes>
+    <AssemblyVersion>0.0.2.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
