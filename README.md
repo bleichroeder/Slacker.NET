@@ -4,7 +4,7 @@ A basic .NET Core Slack BlockKit payload builder and simple message dispatcher.
 
 ## Usage
 
-Building BlockKit payloads is simple as creating a new BlockPayload and adding sections.
+Building BlockKit payloads is as simple as creating a new BlockPayload and adding sections.
 ```csharp
 // Create a new BlockPayload
 BlockPayload blockKitPayload= new();
@@ -46,7 +46,7 @@ Dispatcher.WebhookUri = new Uri(<YOURWEBHOOKURI>);
 
 // Dispatch payload asynchronously
 bool success = await Dispatcher.SendBlockKitPayloadAsync(blockKitPayload);
-bool success = await Dispatcher.SendSimpleMessage(simpleMessagePayload);
+bool success = await Dispatcher.SendSimpleMessageAsync(simpleMessagePayload);
 
 // or synchronously
 bool success = Dispatcher.SendBlockKitPayload(payload);
