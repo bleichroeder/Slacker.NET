@@ -13,7 +13,7 @@ namespace Slacker.NET.Library.Models.Blocks.ImageSections
         [JsonProperty("alt_text")]
         public string AltText { get; set; }
 
-        public ImageWithTitleSection(string titleText, string imageUrl, string altText = null, bool emoji = true)
+        public ImageWithTitleSection(string titleText, string imageUrl, string altText = " ", bool emoji = true)
         {
             Text = new ImageTitle(titleText, emoji);
             ImageUrl = imageUrl.Replace(" ", "%20");

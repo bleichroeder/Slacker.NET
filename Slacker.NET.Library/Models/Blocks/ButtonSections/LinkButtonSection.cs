@@ -13,7 +13,7 @@ namespace Slacker.NET.Library.Models.Blocks.ButtonSections
         [JsonProperty("accessory")]
         public LinkButtonAccessory Accessory { get; set; }
 
-        public LinkButtonSection(string buttonText, string url, string mrkdwnText = null, bool emoji = true, string value = null)
+        public LinkButtonSection(string buttonText, string url, string mrkdwnText = " ", bool emoji = true, string value = null)
         {
             Text = new LinkButtonMrkdwnSection(mrkdwnText);
             Accessory = new LinkButtonAccessory(buttonText, url, emoji, value);

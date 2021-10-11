@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h54vVb0CBPsS0IL/D1S4mRiBOtQPVR7I+8+4EBFRpPN3B77ZfTT9lFuNweg4rfiMtI3pi01DmiEkx8zECcvB0A==",
+  "success": true,
+  "projectFilePath": "C:\\GitHub\\Slacker.NET\\Slacker.NET.Library\\Slacker.NET.Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
