@@ -11,6 +11,8 @@ namespace Slacker.NET.Library.Models.Blocks.ButtonSections
 
         public LinkButtonMrkdwnSection(string text)
         {
+            if (string.IsNullOrEmpty(text))
+                text = " ";
             Text = text;
         }
     }
