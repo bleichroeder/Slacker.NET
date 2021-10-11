@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Slacker.Net.Library;
 using Slacker.NET.Library.Models.Blocks.ButtonSections;
 using Slacker.NET.Library.Models.Blocks.DividerSections;
 using Slacker.NET.Library.Models.Blocks.Headers;
@@ -6,7 +7,9 @@ using Slacker.NET.Library.Models.Blocks.ImageSections;
 using Slacker.NET.Library.Models.Blocks.MrkdwnSections;
 using Slacker.NET.Library.Models.Blocks.PlainTextSections;
 using Slacker.NET.Library.Models.Blocks.TextFieldSections;
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Slacker.NET.Library.Models
 {
@@ -21,6 +24,26 @@ namespace Slacker.NET.Library.Models
         public BlockPayload()
         {
             Blocks = new List<IBlock>();
+        }
+
+        /// <summary>
+        /// Sends payload using specified webhook Uri synchronously
+        /// </summary>
+        /// <param name="webhookUri"></param>
+        /// <returns></returns>
+        public bool Send(Uri webhookUri)
+        {
+            return Dispatcher.SendBlockKitPayload(this, webhookUri);
+        }
+
+        /// <summary>
+        /// Sends payload using specified webhook Uri asynchronously.
+        /// </summary>
+        /// <param name="webhookUri"></param>
+        /// <returns></returns>
+        public async Task<bool> SendAsync(Uri webhookUri)
+        {
+            return await Dispatcher.SendBlockKitPayloadAsync(this, webhookUri);
         }
 
         /// <summary>

@@ -14,18 +14,13 @@ namespace Slacker.Net.Library
     public static class Dispatcher
     {
         /// <summary>
-        /// The Webhook Uri to be used for communicating with your Slack application.
-        /// </summary>
-        public static Uri WebhookUri { get; set; }
-
-        /// <summary>
         /// Send a basic text message asynchronously.
         /// </summary>
         /// <param name="message"></param>
         /// <returns></returns>
-        public static async Task<bool> SendSimpleMessageAsync(SimpleMessage payload)
+        public static async Task<bool> SendSimpleMessageAsync(SimpleMessage payload, Uri webhookUri)
         {
-            return await DispatchAsync(JsonConvert.SerializeObject(payload));
+            return await DispatchAsync(JsonConvert.SerializeObject(payload), webhookUri);
         }
 
         /// <summary>
@@ -33,9 +28,9 @@ namespace Slacker.Net.Library
         /// </summary>
         /// <param name="message"></param>
         /// <returns></returns>
-        public static bool SendSimpleMessage(SimpleMessage payload)
+        public static bool SendSimpleMessage(SimpleMessage payload, Uri webhookUri)
         {
-            return Dispatch(JsonConvert.SerializeObject(payload));
+            return Dispatch(JsonConvert.SerializeObject(payload), webhookUri);
         }
 
         /// <summary>
@@ -43,9 +38,9 @@ namespace Slacker.Net.Library
         /// </summary>
         /// <param name="payload"></param>
         /// <returns></returns>
-        public static async Task<bool> SendBlockKitPayloadAsync(BlockPayload payload)
+        public static async Task<bool> SendBlockKitPayloadAsync(BlockPayload payload, Uri webhookUri)
         {
-            return await DispatchAsync(JsonConvert.SerializeObject(payload));
+            return await DispatchAsync(JsonConvert.SerializeObject(payload), webhookUri);
         }
 
         /// <summary>
@@ -53,9 +48,9 @@ namespace Slacker.Net.Library
         /// </summary>
         /// <param name="payload"></param>
         /// <returns></returns>
-        public static bool SendBlockKitPayload(BlockPayload payload)
+        public static bool SendBlockKitPayload(BlockPayload payload, Uri webhookUri)
         {
-            return Dispatch(JsonConvert.SerializeObject(payload));
+            return Dispatch(JsonConvert.SerializeObject(payload), webhookUri);
         }
 
         /// <summary>
@@ -63,11 +58,11 @@ namespace Slacker.Net.Library
         /// </summary>
         /// <param name="payload"></param>
         /// <returns></returns>
-        private static async Task<bool> DispatchAsync(string payload)
+        private static async Task<bool> DispatchAsync(string payload, Uri webhookUri)
         {
             try
             {
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create(WebhookUri);
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create(webhookUri);
                 httpWebRequest.ContentType = "application/json";
                 httpWebRequest.Method = "POST";
 
@@ -100,11 +95,11 @@ namespace Slacker.Net.Library
         /// </summary>
         /// <param name="payload"></param>
         /// <returns></returns>
-        private static bool Dispatch(string payload)
+        private static bool Dispatch(string payload, Uri webhookUri)
         {
             try
             {
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create(WebhookUri);
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create(webhookUri);
                 httpWebRequest.ContentType = "application/json";
                 httpWebRequest.Method = "POST";
 

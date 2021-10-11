@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Simple .NET Core Slack messenger allowing for simple text messaging and BlockKit " +
     "payloads.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Slacker.NET.Library")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Slacker.NET.Library")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.3.0")]

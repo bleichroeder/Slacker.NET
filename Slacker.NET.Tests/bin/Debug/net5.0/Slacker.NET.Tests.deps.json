@@ -9,7 +9,7 @@
       "Slacker.NET.Tests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "16.9.4",
-          "Slacker.NET.Library": "0.0.3",
+          "Slacker.NET.Library": "0.0.4",
           "coverlet.collector": "3.0.2",
           "xunit": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3"
@@ -1021,7 +1021,7 @@
         }
       },
       "xunit.runner.visualstudio/2.4.3": {},
-      "Slacker.NET.Library/0.0.3": {
+      "Slacker.NET.Library/0.0.4": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
@@ -1660,7 +1660,7 @@
       "path": "xunit.runner.visualstudio/2.4.3",
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
     },
-    "Slacker.NET.Library/0.0.3": {
+    "Slacker.NET.Library/0.0.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

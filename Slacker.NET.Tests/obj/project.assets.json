@@ -1581,7 +1581,7 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "Slacker.NET.Library/0.0.3": {
+      "Slacker.NET.Library/0.0.4": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -5627,7 +5627,7 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "Slacker.NET.Library/0.0.3": {
+    "Slacker.NET.Library/0.0.4": {
       "type": "project",
       "path": "../Slacker.NET.Library/Slacker.NET.Library.csproj",
       "msbuildProject": "../Slacker.NET.Library/Slacker.NET.Library.csproj"
@@ -5636,7 +5636,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.NET.Test.Sdk >= 16.9.4",
-      "Slacker.NET.Library >= 0.0.3",
+      "Slacker.NET.Library >= 0.0.4",
       "coverlet.collector >= 3.0.2",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"

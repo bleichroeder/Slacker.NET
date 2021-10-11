@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <Authors>bleichroeder</Authors>
     <Description>Simple .NET Core Slack messenger allowing for simple text messaging and BlockKit payloads.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
