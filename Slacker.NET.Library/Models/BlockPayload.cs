@@ -120,5 +120,14 @@ namespace Slacker.NET.Library.Models
         {
             Blocks.Add(new Divider());
         }
+
+        /// <summary>
+        /// Adds a BlockKit button array to the payload.
+        /// </summary>
+        /// <param name="buttons"></param>
+        public void AddButtonArray(List<ButtonSection> buttons = null)
+        {
+            Blocks.Add(new ButtonArray(buttons));
+        }
     }
 }
