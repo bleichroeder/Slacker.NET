@@ -1,0 +1,12 @@
+C:\GitHub\Slacker.NET\Slacker.NET.Library\bin\Debug\net5.0\Slacker.NET.Library.deps.json
+C:\GitHub\Slacker.NET\Slacker.NET.Library\bin\Debug\net5.0\Slacker.NET.Library.dll
+C:\GitHub\Slacker.NET\Slacker.NET.Library\bin\Debug\net5.0\ref\Slacker.NET.Library.dll
+C:\GitHub\Slacker.NET\Slacker.NET.Library\bin\Debug\net5.0\Slacker.NET.Library.pdb
+C:\GitHub\Slacker.NET\Slacker.NET.Library\obj\Debug\net5.0\Slacker.NET.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\Slacker.NET\Slacker.NET.Library\obj\Debug\net5.0\Slacker.NET.Library.AssemblyInfoInputs.cache
+C:\GitHub\Slacker.NET\Slacker.NET.Library\obj\Debug\net5.0\Slacker.NET.Library.AssemblyInfo.cs
+C:\GitHub\Slacker.NET\Slacker.NET.Library\obj\Debug\net5.0\Slacker.NET.Library.csproj.CoreCompileInputs.cache
+C:\GitHub\Slacker.NET\Slacker.NET.Library\obj\Debug\net5.0\Slacker.NET.Library.dll
+C:\GitHub\Slacker.NET\Slacker.NET.Library\obj\Debug\net5.0\ref\Slacker.NET.Library.dll
+C:\GitHub\Slacker.NET\Slacker.NET.Library\obj\Debug\net5.0\Slacker.NET.Library.pdb
+C:\GitHub\Slacker.NET\Slacker.NET.Library\bin\Debug\net5.0\nuget.config

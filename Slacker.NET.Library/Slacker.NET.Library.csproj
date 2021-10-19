@@ -4,12 +4,27 @@
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.5</Version>
-    <Authors>bleichroeder</Authors>
-    <Description>Simple .NET Core Slack messenger allowing for simple text messaging and BlockKit payloads.</Description>
+    <Authors>blcdr</Authors>
+    <Description>Simple .NET Core library allowing for dispatching and building Slack BlockKit payloads and simple messages.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReleaseNotes>Testing basic dispatching and BlockKit payload building.</PackageReleaseNotes>
     <AssemblyVersion>0.0.3.0</AssemblyVersion>
+    <PackageProjectUrl>https://github.com/bleichroeder/Slacker.NET</PackageProjectUrl>
+    <Product>Slacker.NET</Product>
+    <Company>blcdr</Company>
+    <PackageId>Slacker.NET</PackageId>
+    <RepositoryUrl>https://github.com/bleichroeder/Slacker.NET.git</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="nuget.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="nuget.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
