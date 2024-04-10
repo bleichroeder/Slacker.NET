@@ -10,7 +10,7 @@ Added ButtonArray(Actions) to BlockKit payloads.
 
 ## Installation
 
-https://www.nuget.org/packages/Slacker.NET.Library/
+https://www.nuget.org/packages/Slacker.NET/
 
 ## Usage
 
